@@ -71,7 +71,7 @@ div.coluna-2 > .stars-text {
 
 aside.coluna-3 > div {
     background-color: var(--very-dark-magenta);
-    padding: 20px;
+    padding: 20px 30px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
@@ -81,8 +81,27 @@ aside.coluna-3 img {
     width: 50px;
 }
 
-div.colton {
+span {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+div.colton, .irene, .anne {
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.name-checked {
+    margin-left: 25px;
+    line-height: 1.4;
+}
+
+.text {
+    color: white;
+    font-weight: 500;
+    line-height: 1.5;
 }
