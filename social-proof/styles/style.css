@@ -20,14 +20,14 @@
 }
 
 body {
-    width: 96vw;
-    height: 100vh;
+   /* width: 96vw;
+    height: 100vh; */
     font-family: 'League-Spartan', sans-serif;
 }
 
 main#container {
     width: 375px;
-    height: 100vh;
+    /*height: 100vh;*/
     margin: auto;
 }
 
