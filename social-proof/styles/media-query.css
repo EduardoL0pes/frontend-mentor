@@ -1,5 +1,94 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 992px) {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --very-dark-magenta: hsl(300,43%,22%);
+    --soft-pink: hsl(333,80%,67%);
+    --dark-grayish-magenta: hsl(303,10%,53%);
+    --light-grayish-magenta: hsl(300,24%,96%);
+    --white: hsl(0,0,100%);
+}
+
+@media screen and (min-width: 980px) {
     
+    main#container {
+        width: 980px;
+        height: 645px;
+        position: relative;
+        top: 70px;
+    }
+
+    main#container > section {
+        width: 930px;
+        margin: auto;
+    }
+
+    div.coluna-1 {
+        float: left;
+        text-align: left;
+    }
+
+    div.coluna-1 h1 {
+        margin-top: -5px;
+    }
+
+    div.coluna-1 p {
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    div.coluna-2 {
+        float: right;
+        width: 390px;
+    }
+
+    div.coluna-2 img {
+        margin-right: 5px;
+    }
+
+    div.coluna-2 p {
+        margin-left: 15px;
+    }
+
+    div.coluna-2 .stars-text-1, .stars-text-2, .stars-text-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.coluna-2 .stars-text-1 {
+        position: relative;
+        right: 40px;
+    }
+
+    div.coluna-2 .stars-text-3 {
+        position: relative;
+        left: 40px;
+    }
+
+    aside.coluna-3 {
+        width: 720px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    div.column-irene {
+        margin: 0 20px;
+        position: relative;
+        top: 20px;
+    }
+
+    div.column-anne {
+        position: relative;
+        top: 40px;
+    }
+
+    aside.coluna-3 .colton, .irene, .anne {
+        width: 250px;
+    }
 }

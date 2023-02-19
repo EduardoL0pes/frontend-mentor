@@ -20,14 +20,11 @@
 }
 
 body {
-   /* width: 96vw;
-    height: 100vh; */
     font-family: 'League-Spartan', sans-serif;
 }
 
 main#container {
     width: 375px;
-    /*height: 100vh;*/
     margin: auto;
 }
 
@@ -56,17 +53,17 @@ div.coluna-2 {
     text-align: center;
 }
 
-div.coluna-2 > .stars-text {
+div.coluna-2 p {
+    margin-top: 5px;
+}
+
+div.stars-text-1, .stars-text-2, .stars-text-3 {
     background-color: var(--light-grayish-magenta);
     color: var(--very-dark-magenta);
     font-weight: 700;
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 15px;
-}
-
-.stars-text > p {
-    margin-top: 5px;
 }
 
 aside.coluna-3 > div {
