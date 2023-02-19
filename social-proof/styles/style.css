@@ -105,3 +105,9 @@ div.colton, .irene, .anne {
     font-weight: 500;
     line-height: 1.5;
 }
+
+footer {
+    font: bold 1em trebouchet, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
