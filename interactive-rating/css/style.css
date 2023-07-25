@@ -38,7 +38,7 @@ main#container {
 #sub-container {
     background-color: var(--Dark-Blue);
     max-width: 375px;
-    padding: 20px;
+    padding: 20px 25px 20px 25px;
     border-radius: 15px;
 }
 
@@ -49,4 +49,45 @@ div.star img {
     border-radius: 50%;
 }
 
+div.about-container h1 {
+    margin: 10px 0;
+    font-size: 1.7em;
+    color: var(--White);
+}
 
+div.about-container p {
+    margin-bottom: 15px;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+}
+
+div#d-flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    color: var(--Medium-Grey);
+}
+
+div.circle {
+    background-color: hsla(217, 12%, 63%, 0.11);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    background: var(--color-primary);
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    cursor: pointer;
+}
