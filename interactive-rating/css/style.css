@@ -23,3 +23,30 @@
     font-family: 'Overpass', sans-serif;;
 }
 
+body {
+    background: var(--Very-Dark-Blue);
+}
+
+main#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-container {
+    background-color: var(--Dark-Blue);
+    max-width: 375px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+div.star img {
+    background: hsla(217, 12%, 63%, 0.11);
+    width: 36px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
