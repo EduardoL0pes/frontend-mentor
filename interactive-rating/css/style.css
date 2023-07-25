@@ -76,6 +76,12 @@ div.circle {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+div.circle:hover {
+    background-color: var(--White);
+    color: var(--Dark-Blue);
 }
 
 button {
@@ -90,4 +96,9 @@ button {
     letter-spacing: 0.1em;
     font-weight: 700;
     cursor: pointer;
+}
+
+button:hover {
+    color: var(--color-primary);
+    background-color: var(--White);
 }
