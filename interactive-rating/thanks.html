@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
-    <link rel="stylesheet" href="../interactive-rating/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        picture img {
+            display: block;
+            margin: 25px auto;
+        }
+
+        div.selection {
+            text-align: center;
+            color: hsla(25, 100%, 61%, 0.89);
+            background-color: hsla(217, 12%, 63%, 0.11);
+            font-size: 0.8em;
+            padding: 10px;
+            border-radius: 50px;
+            margin: 0 60px;
+            letter-spacing: 0.1em;
+        }
+
+        div.about-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .paragraph {
+            text-align: center !important;
+            line-height: 1.4;
+        }
+    </style>
 </head>
 <body>
-    
+    <main id="container">      
+        <section id="sub-container">
+            <picture>
+                <img src="../interactive-rating/img/illustration-thank-you.svg" alt="Star">
+            </picture>
+            <div class="selection">           
+                You selected 4 out of 5
+            </div>
+            <div class="about-container">
+                <h1>Thank you!</h1>
+                <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
