@@ -79,7 +79,7 @@ div.circle {
     cursor: pointer;
 }
 
-div.circle:hover {
+div.circle.active {
     background-color: var(--White);
     color: var(--Dark-Blue);
 }
