@@ -42,7 +42,7 @@ main#container {
     border-radius: 15px;
 }
 
-div.star img {
+figure.star img {
     background: hsla(217, 12%, 63%, 0.11);
     width: 36px;
     padding: 10px;
