@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedNumbers.splice(i, 1);
                 number.classList.remove('active');
             }
-            //console.log(selectedNumbers.map(num => num.textContent));
-            console.log(selectedNumbers);
         });
     });
 });
@@ -25,6 +23,7 @@ const sendNumber = document.querySelector('.submit');
 sendNumber.addEventListener('click', () => {
     const numberSelected = selectedNumbers.length;
     const totalNumbers = numbers.length;
+    const selectedNumbersString = selectedNumbers.join('&number=');
 
-    window.location.href = `thanks.html?selected=${numberSelected}&total=${totalNumbers}`;
+    window.location.href = `thanks.html?selected=${numberSelected}&total=${totalNumbers}&number=${selectedNumbersString}`;
 });

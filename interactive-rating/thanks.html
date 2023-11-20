@@ -51,11 +51,11 @@
             const urlParams = new URLSearchParams(window.location.search);
             const numberSelected = urlParams.get('selected');
             const totalNumbers = urlParams.get('total');
+            const selectedNumbers = urlParams.getAll('number');
 
             const divSelection = document.querySelector('.selection');
-            if(divSelection && numberSelected !== null && totalNumbers !== null) {
-                const selectedNumbersArray = Array.from({length: numberSelected}, (_, i) => i + 1);
-                divSelection.textContent = `You selected ${selectedNumbersArray.join} out of ${totalNumbers}`;
+            if(divSelection && numberSelected !== null && totalNumbers !== null && selectedNumbers.length > 0) {
+                divSelection.textContent = `You selected ${selectedNumbers.join(', ')} out of ${totalNumbers}`;
             }
         });
     </script>
