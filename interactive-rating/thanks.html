@@ -39,14 +39,25 @@
             <picture>
                 <img src="../interactive-rating/img/illustration-thank-you.svg" alt="Star">
             </picture>
-            <div class="selection">           
-                You selected 4 out of 5
-            </div>
+            <div class="selection"></div>
             <div class="about-container">
                 <h1>Thank you!</h1>
                 <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
             </div>
         </section>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const numberSelected = urlParams.get('selected');
+            const totalNumbers = urlParams.get('total');
+
+            const divSelection = document.querySelector('.selection');
+            if(divSelection && numberSelected !== null && totalNumbers !== null) {
+                const selectedNumbersArray = Array.from({length: numberSelected}, (_, i) => i + 1);
+                divSelection.textContent = `You selected ${selectedNumbersArray.join} out of ${totalNumbers}`;
+            }
+        });
+    </script>
 </body>
 </html>

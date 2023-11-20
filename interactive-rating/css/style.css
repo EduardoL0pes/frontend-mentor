@@ -68,7 +68,7 @@ div#d-flex {
     color: var(--Medium-Grey);
 }
 
-div.circle {
+span.number {
     background-color: hsla(217, 12%, 63%, 0.11);
     border-radius: 50%;
     width: 50px;
@@ -79,12 +79,12 @@ div.circle {
     cursor: pointer;
 }
 
-div.circle.active {
+span.active {
     background-color: var(--White);
     color: var(--Dark-Blue);
 }
 
-button {
+button.submit {
     border: none;
     width: 100%;
     margin-bottom: 20px;
@@ -98,7 +98,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button.submit:hover {
     color: var(--color-primary);
     background-color: var(--White);
 }
