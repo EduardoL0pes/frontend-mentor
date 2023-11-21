@@ -4,7 +4,7 @@ const numbers = document.querySelectorAll('.number');
 
 document.addEventListener('DOMContentLoaded', () => {
     numbers.forEach(number => {
-        number.addEventListener('click', (event) => {
+        number.addEventListener('click', () => {
             const numValue = Number(number.textContent);
             const i = selectedNumbers.indexOf(numValue);
 
